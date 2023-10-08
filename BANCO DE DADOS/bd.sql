@@ -177,3 +177,38 @@ CREATE INDEX idx_empresa_cidade ON tb_empresas(empr_cidade);
 CREATE INDEX idx_cliente_tipo ON tb_clientes(cli_tipo);
 
 -- v1.0.4
+
+-- Adicionar uma coluna para armazenar o status da empresa (Ativa, Inativa)
+ALTER TABLE tb_empresas
+ADD COLUMN empr_status VARCHAR(50) DEFAULT 'Ativa';
+
+-- Adicionar CONSTRAINT para limitar os valores da coluna empr_status
+ALTER TABLE tb_empresas
+ADD CONSTRAINT chk_empr_status CHECK (empr_status IN ('Ativa', 'Inativa'));
+
+-- Adicionar uma coluna de desconto em tb_produtos
+ALTER TABLE tb_produtos
+ADD COLUMN prod_desconto NUMERIC(10, 2) DEFAULT 0.0;
+
+-- Adicionar CONSTRAINT para verificar desconto em tb_produtos
+ALTER TABLE tb_produtos
+ADD CONSTRAINT chk_prod_desconto CHECK (prod_desconto >= 0 AND prod_desconto <= 100);
+
+-- Adicionar uma coluna de validade em tb_compras para armazenar quando uma compra expira
+ALTER TABLE tb_compras
+ADD COLUMN comp_validade TIMESTAMP;
+
+-- Adicionar uma coluna para armazenar o método de pagamento em tb_compras
+ALTER TABLE tb_compras
+ADD COLUMN comp_metodo_pagamento VARCHAR(50);
+
+-- Adicionar CONSTRAINT para limitar os métodos de pagamento possíveis
+ALTER TABLE tb_compras
+ADD CONSTRAINT chk_comp_metodo_pagamento CHECK (comp_metodo_pagamento IN ('Cartão de Crédito', 'Boleto', 'Débito'));
+
+-- Adicionar índices adicionais para otimizar pesquisas futuras
+CREATE INDEX idx_prod_desconto ON tb_produtos(prod_desconto);
+CREATE INDEX idx_comp_metodo_pagamento ON tb_compras(comp_metodo_pagamento);
+CREATE INDEX idx_empr_status ON tb_empresas(empr_status);
+
+-- v1.0.5
