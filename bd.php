@@ -20,7 +20,7 @@ class Database {
             $connection = new PDO("pgsql:host=$this->host;dbname=$this->dbname", $this->username, $this->password);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            echo "Handshake bem-sucedido :)";
+            
             
         } catch (PDOException $e) {
             error_log($e->getMessage());
@@ -36,7 +36,7 @@ $db = new Database();
 $conn = $db->connect();
 
 if ($conn) {
-    echo "Conexão realizada com sucesso.";
+    echo "Handshake bem-sucedido :)";
 } else {
     echo "Falha na conexão.";
 }
