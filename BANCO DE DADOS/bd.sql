@@ -148,3 +148,32 @@ ALTER COLUMN cli_cpf TYPE VARCHAR(14),
 ALTER COLUMN cli_cnpj TYPE VARCHAR(18);
 
 -- v1.0.3
+-- Adicionando CHECK para email em tb_empresas
+ALTER TABLE tb_empresas
+ADD CONSTRAINT chk_email_format CHECK (empr_email ~* '^.+@.+\..+$');
+
+-- Adicionando CHECK para CEP em tb_empresas
+ALTER TABLE tb_empresas
+ADD CONSTRAINT chk_cep_format CHECK (empr_cep ~ '[0-9]{5}-?[0-9]{3}');
+
+-- Adicionando CHECK para preço em tb_produtos
+ALTER TABLE tb_produtos
+ADD CONSTRAINT chk_preco_non_negative CHECK (prod_preco >= 0);
+
+-- Adicionando CHECK para estoque em tb_produtos
+ALTER TABLE tb_produtos
+ADD CONSTRAINT chk_stock_non_negative CHECK (prod_stock >= 0);
+
+-- Adicionando CHECK para status em tb_compras
+ALTER TABLE tb_compras
+ADD CONSTRAINT chk_status_values CHECK (comp_status IN ('Pendente', 'Aprovado', 'Cancelado'));
+
+-- Adicionando CHECK para operação em tb_auditoria
+ALTER TABLE tb_auditoria
+ADD CONSTRAINT chk_operacao_values CHECK (operacao IN ('INSERT', 'UPDATE', 'DELETE'));
+
+-- Adicionando índices adicionais
+CREATE INDEX idx_empresa_cidade ON tb_empresas(empr_cidade);
+CREATE INDEX idx_cliente_tipo ON tb_clientes(cli_tipo);
+
+-- v1.0.4
