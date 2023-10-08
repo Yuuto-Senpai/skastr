@@ -15,16 +15,20 @@ class Database {
 
     public function connect() {
         $connection = null;
-        
+
         try {
-            $connection = new PDO("pgsql:host=$this->host;dbname=$this->dbname", $this->username, $this->password);
+            $connection = new PDO("pgsql:host={$this->host};dbname={$this->dbname}", $this->username, $this->password);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
-            
-            
+
+            // Se necessário, você pode definir o conjunto de caracteres aqui
+            // $connection->exec("SET NAMES 'utf8'");
+
         } catch (PDOException $e) {
+            // Gravando a mensagem de erro no log de erros do PHP
             error_log($e->getMessage());
-            echo "Falha no Handshake :(" . $e->getMessage();
+
+            // Exibindo uma mensagem mais genérica na tela
+            echo "Falha no Handshake :(";
         }
 
         return $connection;
