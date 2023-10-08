@@ -138,10 +138,6 @@ CREATE TABLE tb_auditoria (
     data_operacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Adicionando a coluna id_empr na tabela tb_itenscompras (já existe em seu script, apenas para referência)
-ALTER TABLE tb_itenscompras
-ADD COLUMN id_empr INT REFERENCES tb_empresas(id_empr);
-
 -- Atualizando os tipos de dados para CPF e CNPJ em tb_clientes (já existe em seu script, apenas para referência)
 ALTER TABLE tb_clientes
 ALTER COLUMN cli_cpf TYPE VARCHAR(14),
