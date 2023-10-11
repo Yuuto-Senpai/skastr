@@ -8,11 +8,11 @@
 <body>
     <header>
         <nav>
-            <ul>
+        <ul>
                 <li><a href="index.php">Início</a></li>
                 <li><a href="produto.php">Produtos</a></li>
                 <li><a href="servico.php">Serviços</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="sobrenos.php">Sobre Nós</a></li>
                 <li><a href="contato.php">Contato</a></li>
                 <li><a href="new_product.php">REMOVER DEPOIS</a></li>
             </ul>

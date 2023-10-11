@@ -26,9 +26,6 @@ class Database {
         } catch (PDOException $e) {
             // Gravando a mensagem de erro no log de erros do PHP
             error_log($e->getMessage());
-
-            // Exibindo uma mensagem mais genérica na tela
-            echo "Falha no Handshake :(";
         }
 
         return $connection;
@@ -42,7 +39,7 @@ $conn = $db->connect();
 if ($conn) {
     echo "Handshake bem-sucedido :)";
 } else {
-    echo "Falha na conexão.";
+    echo "Handshake mal-sucedido :(";
 }
 
 ?>

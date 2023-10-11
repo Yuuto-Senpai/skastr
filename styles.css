@@ -108,7 +108,7 @@ section li {
 footer {
     position: bottom;
     left: 0;
-    bottom: 0;
+    bottom: fixed;
     width: 100%;
     background-color: #108647;
     color: #fff;
