@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SKASTR</title>
+    <title>SKASTR - EXPOCEEP</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
             </ul>
         </nav>
         <div class="hero">
-            <h1>Bem-vindo à página inicial do projeto SKASTR</h1>
+            <h1>Bem-vindo à página inicial do projeto SKASTR - EXPOCEEP</h1>
             <p>Fornecemos uma plataforma para pequenas e microempresas apresentarem seus produtos ou serviços, interagirem com os clientes e facilitarem transações comerciais.</p>
-            <a href="https://www.skaenosystem.com" class="btn">Comece Agora</a>
+            <a href="produto.php" class="btn">Comece Agora</a>
         </div>
     </header>
     <main>

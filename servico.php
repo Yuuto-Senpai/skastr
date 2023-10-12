@@ -22,13 +22,13 @@
         <section class="services">
             <h2>Nossos Serviços</h2>
             <ul>
-                <li>
+            <li>
                     <h3>Serviço 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt bibendum, velit elit bibendum sapien, vel lacinia sapien sapien vel velit. Sed euismod, nisl vel tincidunt bibendum, velit elit bibendum sapien, vel lacinia sapien sapien vel velit.</p>
+                    <p>Como supracitado anteriormente. Oferecemos uma ampla gama de aplicativos para gerir seu negócio tal como os modelos adotados como de CRM - CREW RESOURCE MANAGEMENT</p>
                 </li>
                 <li>
                     <h3>Serviço 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt bibendum, velit elit bibendum sapien, vel lacinia sapien sapien vel velit. Sed euismod, nisl vel tincidunt bibendum, velit elit bibendum sapien, vel lacinia sapien sapien vel velit.</p>
+                    <p>Como supracitado anteriormente. Oferecemos uma ampla gama de programas e usos para tais</p>
                 </li>
                 <li>
                     <h3>Serviço 3</h3>
@@ -39,11 +39,12 @@
     </main>
     <footer>
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
+        <li><a href="index.php">Início</a></li>
+                <li><a href="produto.php">Produtos</a></li>
+                <li><a href="servico.php">Serviços</a></li>
+                <li><a href="sobrenos.php">Sobre Nós</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="new_product.php">REMOVER DEPOIS</a></li>
         </ul>
         <p>&copy; 2023 Skaeno System. Todos os direitos reservados.</p>
     </footer>

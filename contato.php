@@ -8,7 +8,7 @@
 <body>
     <header>
         <nav>
-        <ul>
+            <ul>
                 <li><a href="index.php">Início</a></li>
                 <li><a href="produto.php">Produtos</a></li>
                 <li><a href="servico.php">Serviços</a></li>
@@ -27,7 +27,7 @@
                     <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">E-mail:</label>
+                    <label for="email">E-mail(obrigatório):</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
@@ -46,13 +46,14 @@
         </section>
     </main>
     <footer>
-        <ul>
-        <li><a href="index.php">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+             <ul>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="produto.php">Produtos</a></li>
+                <li><a href="servico.php">Serviços</a></li>
+                <li><a href="sobrenos.php">Sobre Nós</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="new_product.php">REMOVER DEPOIS</a></li>
+            </ul>
         <p>&copy; 2023 Skaeno System. Todos os direitos reservados.</p>
     </footer>
 </body>
