@@ -22,7 +22,7 @@ $conn = null;
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SKASTR - Produtos</title>
+    <title>Produtos - SKASTR</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -30,11 +30,10 @@ $conn = null;
         <nav>
         <ul>
                 <li><a href="index.php">Início</a></li>
-                <li><a href="produto.php">Produtos</a></li>
+                <li><a href="https://skaenosystem.com/skastr01">Produtos</a></li>
                 <li><a href="servico.php">Serviços</a></li>
                 <li><a href="sobrenos.php">Sobre Nós</a></li>
                 <li><a href="contato.php">Contato</a></li>
-                <li><a href="new_product.php">REMOVER DEPOIS</a></li>
             </ul>
         </nav>
     </header>
@@ -56,13 +55,6 @@ $conn = null;
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
         <p>&copy; 2023 Skaeno System. Todos os direitos reservados.</p>
     </footer>
 </body>

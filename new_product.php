@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <nav>
         <ul>
                 <li><a href="index.php">Início</a></li>
-                <li><a href="produto.php">Produtos</a></li>
+                <li><a href="https://skaenosystem.com/skastr01">Produtos</a></li>
                 <li><a href="servico.php">Serviços</a></li>
                 <li><a href="sobrenos.php">Sobre Nós</a></li>
                 <li><a href="contato.php">Contato</a></li>
@@ -133,13 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
         <p>&copy; 2023 Skaeno System. Todos os direitos reservados.</p>
     </footer>
 </body>
