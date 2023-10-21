@@ -3,7 +3,7 @@
 class Database {
     private $host;
     private $dbname;
-    private $username;
+    
     private $password;
 
     public function __construct($host = "localhost", $dbname = "skastr", $username = "postgres", $password = "jesussalva22*") {
